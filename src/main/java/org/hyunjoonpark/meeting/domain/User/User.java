@@ -15,6 +15,10 @@ import java.util.Objects;
 
 @Entity
 @Getter
+@Table(name = "users", indexes = {
+        @Index(name = "idx_user_university", columnList = "university_id"),
+        @Index(name = "idx_user_mbti", columnList = "mbti")
+})
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class User {
     @Id private String id; // ID
