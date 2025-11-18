@@ -1,7 +1,6 @@
 package org.hyunjoonpark.meeting.domain.User;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import lombok.*;
 import org.hyunjoonpark.meeting.domain.University.University;
